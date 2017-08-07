@@ -1,0 +1,146 @@
+.donghua2{
+	width: 100%;
+	height: 100%;
+	background: url(../images/beijing.jpg) no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	padding-top: 6%;
+	box-sizing: border-box;
+	overflow: auto;
+}
+.mybook .ul1 li #one,#two,#three,#fore{
+	color: black;
+	font-size: 30px;
+	border-bottom: none;
+}
+.mybook .ul1 li #five{
+	color:#5B051D;
+	font-size: 35px;
+	border-bottom: 2px solid #5B051D;
+}
+.mybook .ul1 li #one:hover,#two:hover,#three:hover,#fore:hover{
+	font-size: 35px;
+}
+.mybook .liuyan{
+	margin-top: 50px;
+	/*border: 1px solid red;
+	box-sizing: border-box;*/
+	width: 100%;
+	height: auto;
+}
+.mybook .liuyan .jieshao{
+	width: 100%;
+	height: 300px;
+	/*border: 2px solid green;
+	box-sizing: border-box;*/
+}
+.mybook .liuyan .jieshao .photo{
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+}
+.mybook .liuyan .jieshao .photo img{
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	border-radius:50px;
+	transition: all 1s;
+}
+.mybook .liuyan .jieshao .photo img:hover{
+	transform: rotateZ(360deg);
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+}
+.mybook .liuyan .jieshao .jianjie{
+	width: 80%;
+	height: 150px;
+	margin: 0 auto;
+	/*border: 1px solid blue;
+	box-sizing: border-box;*/
+}
+.mybook .liuyan .jieshao .jianjie p{
+	font-size: 20px;
+	line-height: 35px;
+	text-align: justify;
+}
+.mybook .liuyan .jieshao .jianjie p b{
+	color: #803E51;
+}
+.mybook .liuyan .neirong{
+	width: 80%;
+	height: 500px;
+	margin:0px auto;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	background-color: burlywood
+}
+.mybook .liuyan .neirong #span{
+	display: block;
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	text-align: left;
+	font-size: 30px;
+	border-radius: 10px 10px 0 0;
+	background-color: #520013;
+	color: white;
+}
+.mybook .liuyan .neirong form{
+	padding-top: 30px;
+	position: relative;
+}
+.mybook .liuyan .neirong form span{
+	font-size: 25px;
+	line-height: 50px;
+}
+.mybook .liuyan .neirong form #name,#email{
+	display: inline-block;
+	position: absolute;
+	right: 250px;
+	width: 300px;
+	height: 30px;
+	border-radius: 5px;
+	font-family: "华文行楷";
+	font-size: 18px;
+	border: none;
+	opacity: .5;
+}
+.mybook .liuyan .neirong form #neirong{
+	display: inline-block;
+	width: 70%;
+	height: 150px;
+	border-radius:5px ;
+	position: absolute;
+	right: 100px;
+	font-family: "华文行楷";
+	font-size: 18px;
+	border: none;
+	opacity: .5;
+}
+.mybook .liuyan .neirong form #submit{
+	display: block;
+	font-size: 22px;
+	font-family: "华文行楷";
+	width: 80px;
+	height: 35px;
+	position: absolute;
+	right: 100px;
+	bottom: -150px;
+	background-color: #520013;
+	border: none;
+	border-radius: 2px;
+	color: white;
+	transition: all 1s; 
+}
+.mybook .liuyan .neirong form #submit:hover{
+	width: 85px;
+	height: 38px;
+	background-color: #690722;
+	font-size: 24px;
+}

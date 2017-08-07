@@ -1,0 +1,65 @@
+.donghua2{
+	width: 100%;
+	height: 100%;
+	background: url(../images/beijing.jpg) no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	padding-top: 6%;
+	box-sizing: border-box;
+	overflow: auto;
+}
+.mybook .ul1 li #one ,.mybook .ul1 li #two,.mybook .ul1 li #three{
+	color: black;
+	font-size: 30px;
+	border-bottom: none;
+}
+.mybook .ul1 li #fore{
+	color:#5B051D;
+	font-size: 35px;
+	border-bottom: 2px solid #5B051D;
+}
+.mybook .ul1 li #one:hover,.mybook .ul1 li #two:hover,.mybook .ul1 li #three:hover{
+	font-size: 35px;
+}
+.mybook .fenxiang{
+	width: 100%;
+	height:auto;
+	padding: 15px;
+	margin: 80px 0px 80px 0px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+.mybook .fenxiang .fxcontent{
+	list-style: none;
+	float: left;
+	width: 33%;
+	height:250px;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+.mybook .fenxiang .fxcontent .fxvideo{
+	border: 2px solid blue;
+	box-sizing: border-box;
+	width: 100%;
+	height: 200px;
+	border: 2px solid #5D051E;
+	box-sizing: border-box;
+	transition: all 1s;
+}
+.mybook .fenxiang .fxcontent .fxvideo img{
+	width: 100%;
+	height: 100%;
+}
+.mybook .fenxiang .fxcontent .fxmiaoshu p{
+	text-align: center;
+	margin-top: 6%;
+}
+.mybook .fenxiang .fxcontent:hover>.fxvideo{
+	transform: rotateY(360deg);
+}

@@ -1,0 +1,226 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/*进入动画1开始*/
+html body{
+	height: 100%;
+}
+body,a{
+	font-family: "华文行楷";
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+}
+.donghua{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	overflow: hidden;
+	background: url(../images/beijing.jpg) no-repeat;
+	background-size: cover;
+	transition: opacity 2s linear 0s,width 2s linear 0s,height 2s linear 0s;
+}
+.donghua .zhong{
+	display: block;
+	width: 22%;
+	height: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 25%;
+	z-index: 1;
+	opacity: 0;
+	animation: yincang 2s linear 3s 1;
+	transition: width 1s linear 0s,height 1s linear 0s,top 1s linear 0s;
+}
+@keyframes yincang{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.zhong:hover{
+	width: 23%;
+	height: 53%;
+	top:22%;
+}
+.zhong:hover+.mo{
+	animation-play-state: paused;
+}
+.donghua .mo{
+	display: block;
+	width: 48%;
+	height: 90%;
+	position: absolute;
+	left: 26%;
+	top: 6%;
+	animation: xianshi 2s linear 0s 1,radios 12s linear 2s infinite;
+}
+@keyframes xianshi{
+	from{
+		width: 0%;
+		height: 0%;
+	}
+	to{
+		width: 48%;
+		height: 90%;
+	}
+}
+@keyframes radios{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.donghua .yin{
+	position: absolute;
+	width: 3%;
+	height: 15%;
+	left: 70%;
+	top: 15%;
+	opacity: 0;
+	transition: width 1s linear 0s,height 1s linear 0s,top 1s linear 0s,left 1s linear 0s;
+}
+.yin:hover{
+	width: 4%;
+	height: 20%;
+	top:10%;
+	left: 69.5%;
+}
+
+/*进入动画1结束*/
+
+
+/*进入动画2开始*/
+.donghua2{
+	width: 0%;
+	height: 0%;
+	background: url(../images/beijing.jpg) no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 2s linear 2s,width 2s linear 2s,height 2s linear 2s;
+	padding-top: 6%;
+	box-sizing: border-box;
+	overflow: auto;
+}
+/*.donghua2{
+	width: 100%;
+	height: 100%;
+	background: url(../images/beijing.jpg) no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	padding-top: 6%;
+	box-sizing: border-box;
+	overflow: auto;
+}*/
+
+.donghua2 .mybook,.book{
+	width: 60%;
+	height: auto;
+	box-shadow:-5px -5px 5px #888888;
+	position: absolute;
+	left: 20%;
+	background: url(../images/zhi.png) repeat;
+	opacity: 0.8;
+}
+.mybook{
+	z-index: 666;
+	padding-top: 30px;
+	margin-bottom: 60px;
+	box-sizing: border-box;
+}
+.donghua2 .mybook .ul1{
+	width: 100%;
+	height: 50px;
+	list-style: none;
+}
+.mybook .ul1 li{
+	float: left;
+	height: 50px;
+	width: 15%;
+	line-height: 50px;
+	text-align: center;
+}
+.mybook .ul1 li:nth-child(1){
+	margin-left: 13%;
+}
+.mybook .ul1 li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+	transition: all 1s; 
+}
+.mybook .ul1 li #one{
+	color:#5B051D;
+	font-size: 35px;
+	border-bottom: 2px solid #5B051D;
+}
+.mybook .ul1 li a:hover{
+	font-size: 35px;
+}
+.mybook #zym{
+	display: block;
+	margin: 40px auto;
+	font-size: 18px;
+	text-align: center;
+}
+.mybook .article{
+	width: 100%;
+	height: auto;
+	padding-left: 40px;
+	box-sizing: border-box;
+	line-height: 30px;
+	font-size: 20px;
+}
+.mybook .article>time{
+	color: #5C051E;
+	/*border:1px solid black;*/
+	display: block;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.mybook .article section>#h3{
+	width: 100%;
+	height: auto;
+	line-height: 30px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.mybook .article section .ul2{
+	line-height: 50px;
+	margin-left: 20px;
+}
+.mybook .pagination{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	margin-top:50px;
+	margin-bottom: 40px;
+}
+.mybook .pagination a:hover{
+	color:#5B051D;
+	border-bottom: 1px solid #5B051D;
+}
+.donghua2 .book{
+	transition: all 1s;
+}
+/*进入动画2结束*/
